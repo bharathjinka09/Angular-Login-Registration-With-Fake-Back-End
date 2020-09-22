@@ -2,7 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
-Entire course tutorial can be found at [EshtechZ](https://www.youtube.com/channel/UC51uB5AVARu8kobpckYmQew) under Angular 6 Dashboard using Material design playlist.
 
 ## Development server
 
