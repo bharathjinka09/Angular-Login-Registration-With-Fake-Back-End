@@ -1,0 +1,25 @@
+<div class="grid-container">
+<form #SimpleForm="ngForm">
+  <div class="form-group">
+      <label for="userName">User Name: </label>
+      <input type="text" class="form-control" id="userName" required [(ngModel)] = "model.userName" 
+      name="userName" #userName="ngModel">
+      <div [hidden] ="userName.valid || userName.pristine" class="alert alert-danger">
+          User name is required
+      </div>
+  </div>
+
+  <div class="form-group">
+      <label for="courseName">Course: </label>
+      <select class="form-control" id="courseName" [(ngModel)] = "model.courseName" name="courseName">
+          <option *ngFor="let course of courseName" [value]="course">{{course}}</option>
+      </select>
+  </div> 
+</form>
+
+<button class="btn btn-success" [disabled]="!SimpleForm.form.valid" (click)="onSubmit()">Submit Form</button>
+
+<div *ngIf="isAngular">
+    <p>You have selected angular</p>
+</div>
+</div>
